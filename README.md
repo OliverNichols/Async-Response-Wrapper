@@ -3,9 +3,10 @@ Simple function for wrapping synchronous (blocking) functions in asyncio. Useful
 
 ## Example usage
 ```py
-import asyncio_wrapper, requests
+from asyncio-wrapper import wrap_async
+import requests # optional, for this example
 
 async def fetch_google():
-    response = await asyncio_wrapper(requests.get, 'https://google.com', *args, **kwargs)
+    response = await wrap_async(requests.get, 'https://google.com', *args, **kwargs)
     ...
 ```
