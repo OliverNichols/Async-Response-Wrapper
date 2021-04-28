@@ -14,7 +14,7 @@ def fetch_google():
 
 Equivalent, asynchronous
 ```py
-from asyncio_wrapper import wrap_async
+from wrap import wrap_async
 import requests # optional, for this example
 
 async def fetch_google():
